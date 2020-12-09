@@ -6,7 +6,7 @@ Include the date you created this project and README file.
 Replace the Project Title
 
 
-### Description
+### Create user interfacing code that returns data based answers
 Describe what your project is about and what it does
 
 ### Files used
