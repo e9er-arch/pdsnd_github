@@ -14,6 +14,7 @@ Include the files used
 
 ### Credits
 https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
+https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 https://modulesunraveled.com/command-line-beginners/copying-and-deleting-files-cp-and-rm-commands
 https://stackoverflow.com/questions/53949041/push-files-from-local-folder-to-folder-in-a-github-repository
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
