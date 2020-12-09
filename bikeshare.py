@@ -6,9 +6,9 @@ CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
 
-MONTH_DATA = ['all', 'january', 'february', 'march', 'april', 'may', 'june']
+MONTH_DATA = ['all', 'january', 'february', '...', 'june']
 
-DAY_DATA = ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']
+DAY_DATA = ['all', 'monday', 'tuesday', 'wednesday', '...', 'sunday']
 
 def get_filters():
     """
@@ -35,24 +35,24 @@ def get_filters():
     # get user input for month (all, january, february, ... , june)
     month_name = ''
     while month_name.lower() not in MONTH_DATA:
-        month_name = input("\nFor which month do you want to filter data? Enter either 'all' or january, february, march, april, may, june)\n")
+        month_name = input("\nFor which month do you want to filter data? Enter either 'all' or january, february, ... june)\n")
         if month_name.lower() in MONTH_DATA:
             #Valid entry, able to return data
             month = month_name.lower()
         else:
             #Invalid entry, not able to return data
-            print("We were not able to find the month you entered - Enter either 'all' or january, february, march, april, may, june.\n")
+            print("We were not able to find the month you entered - Enter either 'all' or january, february, ... june.\n")
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
     day_name = ''
     while day_name.lower() not in DAY_DATA:
-        day_name = input("\nFor which day do you want to filter data? Enter either 'all' or monday, tuesday, wednesday, thursday, friday, saturday, sunday)\n")
+        day_name = input("\nFor which day do you want to filter data? Enter either 'all' or monday, tuesday, wednesday, ... sunday)\n")
         if day_name.lower() in DAY_DATA:
             #Valid entry, able to return data
             day = day_name.lower()
         else:
             #Invalid entry, not able to return data
-            print("We were not able to find the day name you entered- Enter either 'all' or monday, tuesday, wednesday, thursday, friday, saturday, sunday.\n")
+            print("We were not able to find the day name you entered- Enter either 'all' or monday, tuesday, wednesday, ... sunday.\n")
 
     print('-'*40)
     return city, month, day
